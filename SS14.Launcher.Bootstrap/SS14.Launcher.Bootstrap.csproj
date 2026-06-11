@@ -4,12 +4,13 @@
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
     <TargetFramework>net10.0-windows</TargetFramework>
-    <PublishAot>true</PublishAot>
-    <TargetName>Final Frontier Launcher</TargetName>
+    <PublishAot>false</PublishAot>
+    <AssemblyName>TestingServerLauncher</AssemblyName>
+    <TargetName>TestingServerLauncher</TargetName>
     <ApplicationIcon>../SS14.Launcher/Assets/icon.ico</ApplicationIcon>
-    <AssemblyTitle>Final Frontier Launcher</AssemblyTitle>
-    <Product>Final Frontier Launcher</Product>
-    <Description>Launcher for The Final Frontier Space Station 14 server.</Description>
+    <AssemblyTitle>TestingServerLauncher</AssemblyTitle>
+    <Product>TestingServerLauncher</Product>
+    <Description>Launcher for Testing Server.</Description>
     <LangVersion>12</LangVersion>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
 

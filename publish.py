@@ -60,11 +60,11 @@ def publish_windows(x64_only: bool):
         os.makedirs("bin/publish/Windows/bin_arm64/loader", exist_ok=True)
         os.makedirs("bin/publish/Windows/dotnet_arm64", exist_ok=True)
 
-    bootstrap_path = f"SS14.Launcher.Bootstrap/bin/Release/{TFM}-windows/win-x64/publish/Final Frontier Launcher.exe"
+    bootstrap_path = f"SS14.Launcher.Bootstrap/bin/Release/{TFM}-windows/win-x64/publish/TestingServerLauncher.exe"
     # Natively compiled copy we need to get from a separate worker.
-    if os.path.isfile("Final Frontier Launcher.exe"):
-        bootstrap_path = "Final Frontier Launcher.exe"
-    shutil.copyfile(bootstrap_path, "bin/publish/Windows/Final Frontier Launcher.exe")
+    if os.path.isfile("TestingServerLauncher.exe"):
+        bootstrap_path = "TestingServerLauncher.exe"
+    shutil.copyfile(bootstrap_path, "bin/publish/Windows/TestingServerLauncher.exe")
     shutil.copyfile("SS14.Launcher.Bootstrap/console.bat", "bin/publish/Windows/console.bat")
 
     shutil.copytree("Dependencies/dotnet/windows", "bin/publish/Windows/dotnet_x64", dirs_exist_ok=True)
@@ -76,7 +76,7 @@ def publish_windows(x64_only: bool):
         shutil.copytree(f"SS14.Launcher/bin/Release/{TFM}/win-arm64/publish", "bin/publish/Windows/bin_arm64", dirs_exist_ok=True)
         shutil.copytree(f"SS14.Loader/bin/Release/{TFM}/win-arm64/publish", "bin/publish/Windows/bin_arm64/loader", dirs_exist_ok=True)
 
-    shutil.make_archive("FinalFrontierLauncher_Windows", "zip", "bin/publish/Windows")
+    shutil.make_archive("TestingServerLauncher", "zip", "bin/publish/Windows")
 
 def publish_linux(x64_only: bool):
     update_netcore_runtime([PLATFORM_LINUX])
