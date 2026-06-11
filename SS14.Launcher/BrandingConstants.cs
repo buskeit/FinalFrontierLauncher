@@ -12,9 +12,9 @@ public static class BrandingConstants
     public const string AppDataName = "FinalFrontierLauncher";
     public const string ForkIdentifier = "final-frontier";
 
-    public const string PrimaryServerName = "The Final Frontier Testing";
-    public const string DefaultPrimaryServerHost = "localhost";
-    public const ushort DefaultPrimaryServerPort = 1212;
+    public const string PrimaryServerName = "The Final Frontier";
+    public const string DefaultPrimaryServerHost = "g-pl-1.apexnodes.xyz";
+    public const ushort DefaultPrimaryServerPort = 21620;
 
     public const string AppDataEnvironmentVariable = "FINAL_FRONTIER_LAUNCHER_APPDATA_NAME";
     public const string ServerAddressEnvironmentVariable = "FF_LAUNCHER_SERVER_ADDRESS";

@@ -12,7 +12,7 @@ public sealed class BrandingConstantsTests
     {
         var address = BrandingConstants.ResolvePrimaryServerAddress(_ => null);
 
-        Assert.That(address, Is.EqualTo("ss14://localhost:1212/"));
+        Assert.That(address, Is.EqualTo("ss14://g-pl-1.apexnodes.xyz:21620/"));
     }
 
     [Test]
